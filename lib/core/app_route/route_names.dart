@@ -9,11 +9,15 @@ class RouteNames {
   static const String signUpScreen = 'signUpScreen';
   static const String completeProfileScreen = 'completeProfileScreen';
   // feature/doctors screens
-  static const String homeScreen = 'homeScreen';
+  //static const String homeScreen = 'homeScreen';
   static const String patientsScreen = 'patientsScreen';
   static const String patientDetailsScreen = 'patientDetailsScreen';
   static const String scanScreen = 'scanScreen';
   static const String analysisResultScreen = 'analysisResultScreen';
   static const String analysisHistoryScreen = 'analysisHistoryScreen';
   static const String signOrGuestScreen = 'signOrGuestScreen';
+  //////////////////////////////////
+  static const String mainBottomNav = 'mainBottomNav';
+  static const String homeScreen = 'homeScreen';
+  static const String bookDetails = 'bookDetailsScreen';
 }

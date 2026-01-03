@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           builder: DevicePreview.appBuilder,
           useInheritedMediaQuery: true,
           routes: AppRoutes.routes,
-          initialRoute: RouteNames.splashScreen,
+          initialRoute: RouteNames.mainBottomNav,
         );
       },
     );

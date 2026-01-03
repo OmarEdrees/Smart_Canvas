@@ -43,7 +43,6 @@ class SignInScreenBody extends StatelessWidget {
               top: SizeConfig.height * 0.08,
               left: 0,
               right: 0,
-              
               child: Center(
                 child: Container(
                   clipBehavior: Clip.antiAlias,
@@ -74,10 +73,14 @@ class SignInScreenBody extends StatelessWidget {
               physics: const BouncingScrollPhysics(),
               padding: EdgeInsets.only(
                 top: SizeConfig.height * 0.3, // بدل الـ Align + margin
-                bottom: MediaQuery.of(context).viewInsets.bottom + 20, // عشان الكيبورد
+                bottom:
+                    MediaQuery.of(context).viewInsets.bottom +
+                    20, // عشان الكيبورد
               ),
               child: Container(
-                margin: EdgeInsets.symmetric(horizontal: SizeConfig.width * 0.08),
+                margin: EdgeInsets.symmetric(
+                  horizontal: SizeConfig.width * 0.08,
+                ),
                 padding: EdgeInsets.fromLTRB(
                   SizeConfig.width * 0.06,
                   SizeConfig.height * 0.06,
@@ -187,7 +190,8 @@ class SignInScreenBody extends StatelessWidget {
                     HaveAccountOrNot(
                       title: "Don't have an account? ",
                       value: "Sign Up",
-                      onPressed: () => context.pushScreen(RouteNames.signUpScreen),
+                      onPressed: () =>
+                          context.pushScreen(RouteNames.signUpScreen),
                     ),
 
                     const SizedBox(height: 20), // مسافة من تحت

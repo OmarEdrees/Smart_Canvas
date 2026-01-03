@@ -44,16 +44,14 @@ class _CustomTextFormFieldWithTitleState
             : Text(widget.title!, style: AppTextStyles.title16BlackBold),
         SizedBox(height: context.screenHeight * 0.004),
         TextFormField(
-          style: AppTextStyles.title18White.copyWith(
-            color: Colors.white70,
-          ),
+          style: AppTextStyles.title18White.copyWith(color: Colors.black),
           enabled: widget.enable,
           cursorColor: Colors.white,
           controller: widget.controller,
           onChanged: widget.onChanged,
           validator: widget.enableValidator
               ? (value) =>
-                  value!.isEmpty ? "Field ${widget.title} is required" : null
+                    value!.isEmpty ? "Field ${widget.title} is required" : null
               : null,
           obscureText: widget.isPassword ? isPassword : false,
           autovalidateMode: AutovalidateMode.onUserInteraction,
@@ -68,9 +66,9 @@ class _CustomTextFormFieldWithTitleState
             ),
             prefixIcon: widget.prefixIcon == null
                 ? null
-                : Icon(widget.prefixIcon, color:AppColors.kPrimaryColor),
+                : Icon(widget.prefixIcon, color: AppColors.kPrimaryColor),
             hintStyle: AppTextStyles.title14Grey,
-            
+
             border: buildBorder(),
             enabledBorder: buildBorder(),
             focusedBorder: buildBorder(),
@@ -99,10 +97,7 @@ class _CustomTextFormFieldWithTitleState
   OutlineInputBorder buildBorder() {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(16),
-      borderSide: BorderSide(
-        color: AppColors.kPrimaryColor,
-        width: 0.5,
-      ),
+      borderSide: BorderSide(color: AppColors.kPrimaryColor, width: 0.5),
     );
   }
 }
