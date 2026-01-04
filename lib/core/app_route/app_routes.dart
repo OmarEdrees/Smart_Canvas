@@ -1,10 +1,11 @@
-import 'package:smart_canvas/features/BottomNavBar/bottom_nav_bar.dart';
+import 'package:smart_canvas/features/Student/BottomNavBar/bottom_nav_bar.dart';
+import 'package:smart_canvas/features/Student/my_books/view/screens/my_books_screen.dart';
 import 'package:smart_canvas/features/auth/sign_in/view_models/cubit/sign_in_cubit.dart';
 import 'package:smart_canvas/features/auth/sign_in/views/screens/sign_in_screen.dart';
 import 'package:smart_canvas/features/auth/sign_up/view_models/cubit/sign_up_cubit.dart';
 import 'package:smart_canvas/features/auth/sign_up/views/screens/sign_up_screen.dart';
-import 'package:smart_canvas/features/BottomNavBar/home/views/screens/home_screen.dart';
-import 'package:smart_canvas/features/book_details/views/screens/book_details_screen.dart';
+import 'package:smart_canvas/features/Student/BottomNavBar/home/views/screens/home_screen.dart';
+import 'package:smart_canvas/features/Student/book_details/views/screens/book_details_screen.dart';
 import 'package:smart_canvas/features/on_boarding/view_models/cubit/on_boarding_cubit.dart';
 import 'package:smart_canvas/features/on_boarding/views/screens/on_boarding_screen.dart';
 import 'package:smart_canvas/features/splash/views/screens/splash_screen.dart';
@@ -31,6 +32,7 @@ class AppRoutes {
         ),
         RouteNames.mainBottomNav: (context) => const MainBottomNav(),
         RouteNames.homeScreen: (context) => const HomeScreen(),
-        RouteNames.bookDetails: (context) => const BookDetailsScreen(),
+        //RouteNames.bookDetails: (context) => const BookDetailsScreen(),
+        RouteNames.myBooksScreen: (context) => MyBooksScreen(),
       };
 }

@@ -3,7 +3,14 @@ import 'package:smart_canvas/core/utilies/colors/app_colors.dart';
 import 'package:smart_canvas/core/utilies/sizes/sized_config.dart';
 
 class AuthorCard extends StatelessWidget {
-  const AuthorCard({super.key});
+  final String author;
+  final String authorImage;
+
+  const AuthorCard({
+    super.key,
+    required this.author,
+    required this.authorImage,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -30,26 +37,18 @@ class AuthorCard extends StatelessWidget {
               shape: BoxShape.rectangle,
               borderRadius: BorderRadius.circular(5),
               image: DecorationImage(
-                image: NetworkImage(
-                  "https://randomuser.me/api/portraits/men/32.jpg",
-                ),
+                image: NetworkImage(authorImage),
                 fit: BoxFit.cover,
               ),
             ),
           ),
-          // const CircleAvatar(
-          //   radius: 5,
 
-          //   backgroundImage: NetworkImage(
-          //     "https://randomuser.me/api/portraits/men/32.jpg",
-          //   ),
-          // ),
           const SizedBox(width: 12),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               Text(
-                "Max James Lopez",
+                author,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
               SizedBox(height: 4),

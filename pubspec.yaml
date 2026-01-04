@@ -45,6 +45,7 @@ dependencies:
   smooth_page_indicator: ^1.2.1
   supabase_flutter: ^2.8.4
   uuid: ^4.5.1
+  awesome_dialog: ^3.2.1
 
 dev_dependencies:
   flutter_launcher_icons: "^0.14.1"

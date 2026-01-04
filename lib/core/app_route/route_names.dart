@@ -20,4 +20,5 @@ class RouteNames {
   static const String mainBottomNav = 'mainBottomNav';
   static const String homeScreen = 'homeScreen';
   static const String bookDetails = 'bookDetailsScreen';
+  static const String myBooksScreen = 'myBooksScreen';
 }

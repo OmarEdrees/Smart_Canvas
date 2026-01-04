@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:smart_canvas/features/BottomNavBar/home/views/screens/home_screen.dart';
+import 'package:smart_canvas/features/Student/BottomNavBar/home/views/screens/home_screen.dart';
+import 'package:smart_canvas/features/Student/my_books/view/screens/my_books_screen.dart';
 
 class MainBottomNav extends StatefulWidget {
   const MainBottomNav({super.key});
@@ -11,7 +12,7 @@ class MainBottomNav extends StatefulWidget {
 class _MainBottomNavState extends State<MainBottomNav> {
   int currentIndex = 0;
 
-  final pages = [HomeScreen(), CartPage(), FavoritePage(), ProfilePage()];
+  final pages = [HomeScreen(), CartPage(), MyBooksScreen(), ProfilePage()];
 
   @override
   Widget build(BuildContext context) {

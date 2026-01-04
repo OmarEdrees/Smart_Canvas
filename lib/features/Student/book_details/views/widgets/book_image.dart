@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BookImage extends StatelessWidget {
-  const BookImage({super.key});
+  final String imageUrl;
+  const BookImage({super.key, required this.imageUrl});
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +21,7 @@ class BookImage extends StatelessWidget {
           ],
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: NetworkImage(
-              'https://img.pikbest.com/origin/06/29/72/39YpIkbEsTKtI.jpg!w700wp',
-            ),
+            image: NetworkImage(imageUrl),
           ),
         ),
       ),

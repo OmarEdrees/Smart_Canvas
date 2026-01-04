@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:smart_canvas/core/components/variables_app.dart';
-import 'package:smart_canvas/features/BottomNavBar/home/views/widgets/appBar.dart';
-import 'package:smart_canvas/features/BottomNavBar/home/views/widgets/book_item_card.dart';
-import 'package:smart_canvas/features/BottomNavBar/home/views/widgets/categories_books.dart';
-import 'package:smart_canvas/features/BottomNavBar/home/views/widgets/my_books_card.dart';
-import 'package:smart_canvas/features/BottomNavBar/home/views/widgets/search_bar.dart';
+import 'package:smart_canvas/features/Student/BottomNavBar/home/views/widgets/appBar.dart';
+import 'package:smart_canvas/features/Student/BottomNavBar/home/views/widgets/book_item_card.dart';
+import 'package:smart_canvas/features/Student/BottomNavBar/home/views/widgets/categories_books.dart';
+import 'package:smart_canvas/features/Student/BottomNavBar/home/views/widgets/my_books_card.dart';
+import 'package:smart_canvas/features/Student/BottomNavBar/home/views/widgets/search_bar.dart';
 
 class HomeScreenWidget extends StatelessWidget {
   const HomeScreenWidget({super.key});
@@ -24,7 +24,7 @@ class HomeScreenWidget extends StatelessWidget {
               const SizedBox(height: 16),
               searchBar(),
               const SizedBox(height: 35),
-              myBooksCard(),
+              myBooksCard(booksList: gridViewMyBooksList),
               const SizedBox(height: 30),
               const Text(
                 'For you',
@@ -33,16 +33,7 @@ class HomeScreenWidget extends StatelessWidget {
               const SizedBox(height: 12),
               categoriesBooks(categories: categories),
               const SizedBox(height: 16),
-              SizedBox(
-                height: 250,
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: 4,
-                  itemBuilder: (context, index) {
-                    return bookItemCard();
-                  },
-                ),
-              ),
+              bookItemCard(booksList: gridViewMyBooksList),
             ],
           ),
         ),
