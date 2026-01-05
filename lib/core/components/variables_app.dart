@@ -1,4 +1,4 @@
-import 'package:smart_canvas/features/Student/my_books/models/my_books_model.dart';
+import 'package:smart_canvas/features/Student/library/my_books/models/my_books_model.dart';
 
 final categories = ['Design', 'Fiction', 'Science Fiction', 'Astrology'];
 

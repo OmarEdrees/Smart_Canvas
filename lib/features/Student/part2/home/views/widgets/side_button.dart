@@ -1,0 +1,24 @@
+import 'package:flutter/material.dart';
+
+class SideButton extends StatelessWidget {
+  final String image;
+  const SideButton({super.key, required this.image});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 20),
+      width: 70,
+      height: 70,
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.black),
+        color: Colors.white,
+        shape: BoxShape.circle,
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(15), // 👈 صغّر أو كبّر حسب اللي بدك
+        child: Image.asset(image, fit: BoxFit.contain),
+      ),
+    );
+  }
+}
