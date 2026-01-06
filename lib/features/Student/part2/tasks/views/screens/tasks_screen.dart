@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:smart_canvas/features/Student/part2/home/models/home_item_model.dart';
 
 class TasksScreen extends StatelessWidget {
-  const TasksScreen({super.key});
+  const TasksScreen({super.key, required HomeItemModel homeItem});
 
   @override
   Widget build(BuildContext context) {

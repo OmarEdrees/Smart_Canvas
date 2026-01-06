@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_canvas/core/utilies/colors/app_colors.dart';
+import 'package:smart_canvas/features/Doctor/dashboard/views/screens/dashboard_doctor.dart';
 
 class searchBar extends StatelessWidget {
   const searchBar({super.key});
@@ -26,14 +27,22 @@ class searchBar extends StatelessWidget {
           ),
         ),
         const SizedBox(width: 12),
-        Container(
-          height: 48,
-          width: 48,
-          decoration: BoxDecoration(
-            color: AppColors.kPrimaryColor,
-            borderRadius: BorderRadius.circular(14),
+        GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => DashboardDoctor()),
+            );
+          },
+          child: Container(
+            height: 48,
+            width: 48,
+            decoration: BoxDecoration(
+              color: AppColors.kPrimaryColor,
+              borderRadius: BorderRadius.circular(14),
+            ),
+            child: const Icon(Icons.tune, color: Colors.white),
           ),
-          child: const Icon(Icons.tune, color: Colors.white),
         ),
       ],
     );
