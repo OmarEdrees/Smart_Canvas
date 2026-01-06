@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
 class CustomTextButtonWithIconWithBackground extends StatelessWidget {
-  const CustomTextButtonWithIconWithBackground(
-      {super.key, required this.title, required this.icon, this.onPressed});
+  const CustomTextButtonWithIconWithBackground({
+    super.key,
+    required this.title,
+    required this.icon,
+    this.onPressed,
+  });
   final String title;
   final IconData icon;
   final Function()? onPressed;
@@ -15,9 +19,7 @@ class CustomTextButtonWithIconWithBackground extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.white,
         foregroundColor: Colors.pink,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(30),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       ),
     );
   }

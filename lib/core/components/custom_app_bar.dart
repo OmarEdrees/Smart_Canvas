@@ -3,10 +3,7 @@ import 'package:smart_canvas/core/utilies/styles/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const CustomAppBar({
-    super.key,
-    required this.shopName,
-  });
+  const CustomAppBar({super.key, required this.shopName});
 
   final String shopName;
 
@@ -23,7 +20,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
     );
   }
-  
+
   @override
   // TODO: implement preferredSize
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
