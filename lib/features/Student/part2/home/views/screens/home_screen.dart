@@ -15,10 +15,15 @@ class HomeScreen extends StatelessWidget {
       body: Stack(
         children: [
           /// HEADER
-          Header(image: 'assets/images/student_person.png'),
-
-          /// BODY
-          BodyGridItems(),
+          Column(
+            children: [
+              const Header(image: 'assets/images/student_person.png'),
+              const Expanded(
+                child:
+                    BodyGridItems(), // تأكد أن بداخله SingleChildScrollView أو GridView
+              ),
+            ],
+          ),
 
           /// RIGHT SIDE BUTTONS
           BodySideButton(),

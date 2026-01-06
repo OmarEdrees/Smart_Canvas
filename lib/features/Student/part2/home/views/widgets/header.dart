@@ -9,7 +9,7 @@ class Header extends StatelessWidget {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(20),
-      decoration: const BoxDecoration(color: Color(0xff0C0A3E)),
+      decoration: const BoxDecoration(color: Color(0xff0D0246)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
