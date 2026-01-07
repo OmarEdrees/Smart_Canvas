@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:smart_canvas/core/components/CustomHeader/custom_header.dart';
-import 'package:smart_canvas/core/components/variables_app.dart';
-import 'package:smart_canvas/features/Student/library/my_books/models/my_books_model.dart';
 import 'package:smart_canvas/features/Student/library/my_books/view/widgets/gridView_my_books.dart';
 import 'package:smart_canvas/features/Student/library/my_books/view/widgets/search_bar.dart';
 
