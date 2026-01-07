@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:smart_canvas/features/Student/part2/Payment/views/widgets/payment_details/body_screen_details.dart';
-
+import 'package:smart_canvas/features/Student/part2/ai/ai_chatbot/views/widgets/ai_chatbot_screen_widget.dart';
 import 'package:smart_canvas/features/Student/part2/leave/leave_request/views/widgets/appBar_widget_without_image.dart';
 
-class PaymentDetailsScreenWidget extends StatelessWidget {
-  const PaymentDetailsScreenWidget({super.key});
+class AiChatbotScreen extends StatelessWidget {
+  const AiChatbotScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWidgetWithoutImage(
-        title: 'Payment Details',
+        title: 'Log out',
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -18,7 +17,7 @@ class PaymentDetailsScreenWidget extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios),
         ),
       ),
-      body: BodyScreenDetails(),
+      body: AiChatbotScreenWidget(),
     );
   }
 }

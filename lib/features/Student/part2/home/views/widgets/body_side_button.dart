@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_canvas/features/Student/part2/ai_chatbot/views/screens/ai_chatbot_screen.dart';
+import 'package:smart_canvas/features/Student/part2/ai/ai_chatbot/views/screens/ai_chatbot_screen.dart';
 import 'package:smart_canvas/features/Student/part2/home/views/widgets/side_button.dart';
 
 class BodySideButton extends StatelessWidget {

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:smart_canvas/features/Student/part2/Payment/views/widgets/payment_method/body_button_of_payment_method.dart';
-import 'package:smart_canvas/features/Student/part2/Payment/views/widgets/payment_method/details.dart';
 import 'package:smart_canvas/features/Student/part2/leave/leave_request/views/widgets/appBar_widget_without_image.dart';
+import 'package:smart_canvas/features/Student/part2/leave/leave_request/views/widgets/body_screen.dart';
+import 'package:smart_canvas/features/Student/part2/log_out/views/widgets/image_widget.dart';
 
-class PaymentMethodScreenWidget extends StatelessWidget {
-  const PaymentMethodScreenWidget({super.key});
+class LeaveRequestScreenWidget extends StatelessWidget {
+  const LeaveRequestScreenWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWidgetWithoutImage(
-        title: 'Payment Failed',
+        title: 'Leave Request',
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -20,8 +20,10 @@ class PaymentMethodScreenWidget extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Details(details: 'select one of the payment method'),
-          BodyButtonOfPaymentMethod(),
+          SizedBox(height: 30),
+          ImageWidget(image: 'leave_icon.png'),
+
+          BodyScreen(),
         ],
       ),
     );
