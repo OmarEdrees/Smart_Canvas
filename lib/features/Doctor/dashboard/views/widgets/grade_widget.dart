@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_canvas/features/Doctor/dashboard/views/models/items_model.dart';
+import 'package:smart_canvas/features/Doctor/dashboard/models/items_model.dart';
 
 class GradeWidget extends StatelessWidget {
   final ItemModel item;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_canvas/features/Doctor/dashboard/views/models/items_model.dart';
+import 'package:smart_canvas/features/Doctor/dashboard/models/items_model.dart';
 import 'package:smart_canvas/features/Doctor/dashboard/views/widgets/grade_widget.dart';
 
 class ItemsWidget extends StatelessWidget {

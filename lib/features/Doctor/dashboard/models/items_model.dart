@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_canvas/features/Doctor/assignment/view/screens/assignment_screen.dart';
 
 class ItemModel {
   final String title;
@@ -22,6 +23,7 @@ final List<ItemModel> Items = [
   ItemModel(
     title: 'Assignment',
     image: "assets/images/result_icon.png",
+    screen: const ApparPositionedScreen(),
     //iconColor: Colors.green,
   ),
   ItemModel(
