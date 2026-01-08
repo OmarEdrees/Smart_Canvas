@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_canvas/features/Doctor/assignment/view/models/assignment_Page.dart';
+import 'package:smart_canvas/features/Doctor/assignment/models/assignment_Page.dart';
 import 'package:smart_canvas/features/Doctor/assignment/view/widgets/item_widget.dart';
 
 class AssignmentBodyWidget extends StatelessWidget {
