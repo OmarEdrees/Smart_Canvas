@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_canvas/core/utilies/colors/app_colors.dart';
 import 'package:smart_canvas/features/Student/part2/tasks/views/widgets/task_widget.dart';
 
 class BodyTaskWidget extends StatelessWidget {
@@ -15,8 +16,8 @@ class BodyTaskWidget extends StatelessWidget {
           bottom: 0,
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-            decoration: const BoxDecoration(
-              color: Color(0xffD9D9D9),
+            decoration: BoxDecoration(
+              color: AppColors.greyBackground,
               borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
             ),
 

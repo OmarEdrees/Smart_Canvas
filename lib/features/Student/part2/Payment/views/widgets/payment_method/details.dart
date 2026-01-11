@@ -9,7 +9,7 @@ class Details extends StatelessWidget {
     return Text(
       details,
       style: TextStyle(
-        color: Colors.grey.shade700,
+        color: Colors.white,
         fontSize: 15,
         fontWeight: FontWeight.bold,
       ),

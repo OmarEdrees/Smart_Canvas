@@ -19,9 +19,10 @@ class _CheckBoxSaveCardState extends State<CheckBoxSaveCard> {
           scale: 1.5, // تكبير الحجم قليلاً
           child: Checkbox(
             value: isChecked,
-            side: BorderSide(color: Colors.grey.shade700),
-            activeColor: AppColors.blueDark, // لون المربع عند التفعيل
+            side: BorderSide(color: Colors.white),
+            checkColor: AppColors.background,
 
+            fillColor: MaterialStateProperty.all(Colors.white),
             onChanged: (value) {
               setState(() {
                 isChecked = value!; // 2. تحديث القيمة الحقيقية
@@ -32,7 +33,7 @@ class _CheckBoxSaveCardState extends State<CheckBoxSaveCard> {
         Text(
           'Save this card for payment',
           style: TextStyle(
-            color: Colors.grey.shade700,
+            color: Colors.white,
             fontSize: 22,
             fontWeight: FontWeight.bold,
           ),

@@ -27,7 +27,7 @@ class TaskWidget extends StatelessWidget {
                   title,
 
                   maxLines: 5,
-                  style: TextStyle(fontSize: 18, color: Color(0xff0D3470)),
+                  style: TextStyle(fontSize: 18, color: Colors.white),
                 ),
               ),
             ),
@@ -48,7 +48,7 @@ class TaskWidget extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-          child: Divider(color: Colors.black, thickness: 1),
+          child: Divider(color: Colors.white, thickness: 1),
         ),
       ],
     );

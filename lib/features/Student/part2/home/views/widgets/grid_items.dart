@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_canvas/core/utilies/colors/app_colors.dart';
 import 'package:smart_canvas/features/Student/part2/home/models/home_item_model.dart';
 
 class GridItem extends StatelessWidget {
@@ -18,9 +19,9 @@ class GridItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(5),
         decoration: BoxDecoration(
-          color: Colors.grey.shade200,
+          color: AppColors.background,
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: Colors.black),
+          border: Border.all(color: Colors.white),
           boxShadow: [
             BoxShadow(
               color: Colors.black12,
@@ -32,12 +33,15 @@ class GridItem extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(item.image, height: 60, width: 60),
-            const SizedBox(height: 10),
+            Image.asset(item.image, height: 45, width: 45),
+            const SizedBox(height: 5),
             Text(
               item.title,
               textAlign: TextAlign.center,
-              style: const TextStyle(fontWeight: FontWeight.w600),
+              style: const TextStyle(
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
+              ),
             ),
           ],
         ),

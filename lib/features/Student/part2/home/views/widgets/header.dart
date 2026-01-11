@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_canvas/core/utilies/colors/app_colors.dart';
 
 class Header extends StatelessWidget {
   final String image;
@@ -8,17 +9,14 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(20),
-      decoration: const BoxDecoration(color: Color(0xff0D0246)),
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+      decoration: BoxDecoration(color: AppColors.background),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           /// USER INFO
           Row(
             children: [
-              Image.asset(image, fit: BoxFit.cover, height: 150, width: 100),
-
-              const SizedBox(width: 25),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -42,8 +40,8 @@ class Header extends StatelessWidget {
                   ),
                 ],
               ),
-              const Spacer(),
-              Image.asset('assets/images/icon.png', height: 60, width: 60),
+              Spacer(),
+              Image.asset(image, fit: BoxFit.cover, height: 150, width: 100),
             ],
           ),
         ],

@@ -19,7 +19,7 @@ class TextFieldWidget extends StatelessWidget {
         Text(
           title,
           style: TextStyle(
-            color: Colors.grey.shade700,
+            color: Colors.black,
             fontSize: 22,
             fontWeight: FontWeight.bold,
           ),

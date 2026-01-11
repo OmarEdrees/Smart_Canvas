@@ -11,9 +11,9 @@ class SideButton extends StatelessWidget {
       onTap: ontap,
 
       child: Container(
-        margin: const EdgeInsets.only(bottom: 20),
-        width: 70,
-        height: 70,
+        margin: const EdgeInsets.only(right: 5),
+        width: 65,
+        height: 65,
         decoration: BoxDecoration(
           border: Border.all(color: Colors.black),
           color: Colors.white,

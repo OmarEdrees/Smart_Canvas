@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_canvas/core/utilies/colors/app_colors.dart';
 import 'package:smart_canvas/features/Student/part2/Payment/views/widgets/payment_details/body_text_field_widget.dart';
 import 'package:smart_canvas/features/Student/part2/Payment/views/widgets/payment_details/button_confirm_payment.dart';
 import 'package:smart_canvas/features/Student/part2/Payment/views/widgets/payment_details/checkBox_save_card.dart';
@@ -18,8 +19,8 @@ class BodyScreenDetails extends StatelessWidget {
             width: double.infinity,
             alignment: Alignment.bottomCenter,
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-            decoration: const BoxDecoration(
-              color: Color(0xffD9D9D9),
+            decoration: BoxDecoration(
+              color: AppColors.greyBackground,
               borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
             ),
             child: Column(

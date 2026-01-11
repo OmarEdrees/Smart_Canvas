@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_canvas/core/utilies/colors/app_colors.dart';
 
 class appBarWidget extends StatelessWidget implements PreferredSizeWidget {
   const appBarWidget({super.key});
@@ -7,7 +8,7 @@ class appBarWidget extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       leading: SizedBox.shrink(),
-      backgroundColor: Color(0xff0C0A3E),
+      backgroundColor: AppColors.background,
       centerTitle: true,
       title: const Text(
         "Home",
@@ -18,18 +19,28 @@ class appBarWidget extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
       actions: [
-        Padding(
-          padding: const EdgeInsets.only(right: 15),
-          child: Stack(
-            children: [
-              const Icon(Icons.notifications, color: Colors.white, size: 30),
-              Positioned(
-                right: 0,
-                top: 0,
-                child: CircleAvatar(radius: 4, backgroundColor: Colors.red),
+        Row(
+          children: [
+            Image.asset('assets/images/icon.png', height: 50, width: 50),
+            SizedBox(width: 5),
+            Padding(
+              padding: const EdgeInsets.only(right: 15),
+              child: Stack(
+                children: [
+                  const Icon(
+                    Icons.notifications,
+                    color: Colors.white,
+                    size: 40,
+                  ),
+                  Positioned(
+                    right: 5,
+                    top: 5,
+                    child: CircleAvatar(radius: 4, backgroundColor: Colors.red),
+                  ),
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ],
     );

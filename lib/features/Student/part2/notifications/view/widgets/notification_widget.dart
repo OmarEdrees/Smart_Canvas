@@ -34,7 +34,7 @@ class NotificationWidget extends StatelessWidget {
                   title,
 
                   maxLines: 5,
-                  style: TextStyle(fontSize: 18, color: Color(0xff0D3470)),
+                  style: TextStyle(fontSize: 18, color: Colors.white),
                 ),
               ),
             ),
@@ -52,7 +52,7 @@ class NotificationWidget extends StatelessWidget {
           child: Text(
             " jul 23 .2024 at 09:15am",
             style: TextStyle(
-              color: Colors.grey.shade700,
+              color: Colors.black,
               fontSize: 16,
               fontWeight: FontWeight.bold,
             ),
@@ -65,7 +65,7 @@ class NotificationWidget extends StatelessWidget {
             left: 20,
             top: 5,
           ),
-          child: Divider(color: Colors.black, thickness: 1),
+          child: Divider(color: Colors.grey, thickness: 1),
         ),
       ],
     );

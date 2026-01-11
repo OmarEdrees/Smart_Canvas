@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:smart_canvas/features/Student/duties/views/screens/duties_screen.dart';
+import 'package:smart_canvas/features/Student/part2/Payment/views/screens/payment_success_screen.dart';
+import 'package:smart_canvas/features/Student/part2/Payment/views/widgets/payment_success_screen_widget.dart';
 import 'package:smart_canvas/features/Student/part2/ai/ai_chatbot/views/screens/ai_chatbot_screen.dart';
 import 'package:smart_canvas/features/Student/part2/assignment_details/views/screens/assignment_details_screen.dart';
 import 'package:smart_canvas/features/Student/part2/home/views/widgets/side_button.dart';
 import 'package:smart_canvas/features/Student/part2/profile/views/screens/profile_screen.dart';
 import 'package:smart_canvas/features/Student/part2/receive_assignment/views/screens/receive_assignment_screen.dart';
+import 'package:smart_canvas/features/Student/part2/tasks/views/screens/tasks_screen.dart';
 
 class BodySideButton extends StatelessWidget {
   const BodySideButton({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-      right: 20,
-      top: 300,
-      child: Column(
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 150),
+      child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           SideButton(
@@ -41,9 +43,7 @@ class BodySideButton extends StatelessWidget {
             ontap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => ReceiveAssignmentScreen(),
-                ),
+                MaterialPageRoute(builder: (context) => PaymentSuccessScreen()),
               );
             },
           ),
@@ -63,7 +63,7 @@ class BodySideButton extends StatelessWidget {
             ontap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => DutiesScreen()),
+                MaterialPageRoute(builder: (context) => TasksScreen()),
               );
             },
           ),

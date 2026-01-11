@@ -13,7 +13,7 @@ class ButtonConfirmPayment extends StatelessWidget {
         height: 60,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: AppColors.blueDark,
+          color: AppColors.background,
         ),
         child: Center(
           child: Text(

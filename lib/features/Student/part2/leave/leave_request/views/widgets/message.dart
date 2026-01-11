@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:smart_canvas/core/utilies/colors/app_colors.dart';
 
 class Message extends StatelessWidget {
   const Message({super.key});
@@ -14,7 +13,7 @@ The leave request system aims to facilitate the submission and tracking of reque
       style: TextStyle(
         fontSize: 18,
         fontWeight: FontWeight.bold,
-        color: AppColors.blueDark,
+        color: Colors.white,
       ),
     );
   }

@@ -17,11 +17,12 @@ class BodyAiWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 800,
       padding: EdgeInsets.all(15),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Image.asset(image, height: 350),
+          Image.asset(image, height: 275, fit: BoxFit.cover),
           Container(
             width: double.infinity,
             height: 60,

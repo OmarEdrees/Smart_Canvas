@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_canvas/core/utilies/colors/app_colors.dart';
 
 class AppBarWidgetWithoutImage extends StatelessWidget
     implements PreferredSizeWidget {
@@ -18,12 +19,13 @@ class AppBarWidgetWithoutImage extends StatelessWidget
     return AppBar(
       leading: leading,
       centerTitle: true,
+      backgroundColor: AppColors.background,
       title: Text(
         title,
         style: TextStyle(
           fontSize: fontSize,
           fontWeight: FontWeight.bold,
-          color: Color(0xff0C0A3E),
+          color: Colors.white,
         ),
       ),
     );
