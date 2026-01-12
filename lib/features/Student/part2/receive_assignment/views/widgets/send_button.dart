@@ -15,7 +15,7 @@ class SendButton extends StatelessWidget {
         ),
         //height: 60,
         decoration: BoxDecoration(
-          color: AppColors.blueDark,
+          color: AppColors.greyBackground,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Text(

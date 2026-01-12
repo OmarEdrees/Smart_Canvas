@@ -24,24 +24,25 @@ class BodyReceiveScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
 
               children: [
+                const SizedBox(height: 30),
                 UploadImage(),
 
-                const SizedBox(height: 20),
+                const SizedBox(height: 30),
 
                 /// Select files button
                 ButtonUploadImage(),
 
-                const SizedBox(height: 20),
+                const SizedBox(height: 30),
 
                 /// Note field
                 NoteField(),
 
-                const SizedBox(height: 20),
+                const SizedBox(height: 15),
 
                 /// Selected files title
                 SelectedFiles(),
 
-                const SizedBox(height: 20),
+                const SizedBox(height: 80),
 
                 /// Send now button
                 SendButton(),

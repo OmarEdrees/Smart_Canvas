@@ -19,7 +19,7 @@ class BodyDutiesScreen extends StatelessWidget {
             child: Column(
               children: [
                 SearchBarDuties(),
-                SizedBox(height: 50),
+                SizedBox(height: 80),
                 BodyFieldDuties(),
                 const SizedBox(height: 50),
                 BodyStatusRow(),

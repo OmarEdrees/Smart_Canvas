@@ -21,7 +21,7 @@ class ProfileField extends StatelessWidget {
         style: TextStyle(
           fontSize: 23,
           fontWeight: FontWeight.bold,
-          color: Colors.grey.shade800,
+          color: Colors.black,
         ),
       ),
     );

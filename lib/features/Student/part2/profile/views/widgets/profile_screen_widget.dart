@@ -8,15 +8,8 @@ class ProfileScreenWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: AppColors.blueDark,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: Icon(Icons.arrow_back_ios, color: Colors.white),
-        ),
-      ),
+      backgroundColor: AppColors.background,
+
       body: HeaderProfile(),
     );
   }

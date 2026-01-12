@@ -8,15 +8,16 @@ class BodyProfileField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 250),
+      margin: EdgeInsets.only(top: 340),
       width: double.infinity,
       alignment: Alignment.bottomCenter,
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
       decoration: BoxDecoration(
         color: AppColors.greyBackground,
         borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
           ProfileField(title: 'Student Name:'),
           ProfileField(title: 'the age:'),

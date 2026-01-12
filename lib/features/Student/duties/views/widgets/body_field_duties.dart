@@ -11,7 +11,7 @@ class BodyFieldDuties extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.black, width: 1.2),
+        border: Border.all(color: Colors.white, width: 1.2),
         borderRadius: BorderRadius.circular(28),
       ),
       child: Column(

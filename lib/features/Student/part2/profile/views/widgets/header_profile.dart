@@ -10,16 +10,16 @@ class HeaderProfile extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: 150,
+          height: 230,
           width: double.infinity,
           alignment: Alignment.bottomLeft,
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
           decoration: BoxDecoration(
-            color: AppColors.blueDark,
+            color: AppColors.greyBackground,
             borderRadius: BorderRadius.vertical(bottom: Radius.circular(30)),
           ),
           child: Text(
-            'Profil',
+            'Profile',
             style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class HeaderProfile extends StatelessWidget {
             width: 175,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(110),
-              color: Colors.grey[50],
+              color: Colors.grey,
               image: DecorationImage(
                 image: AssetImage('assets/images/man_icon.png'),
               ),

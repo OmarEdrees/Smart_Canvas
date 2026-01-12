@@ -10,7 +10,7 @@ class FieldAssignmentDetails extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hint,
         hintStyle: const TextStyle(
-          color: Color(0xFFCFC5C5),
+          color: Colors.white,
           fontWeight: FontWeight.bold,
           fontSize: 17,
         ),
@@ -21,11 +21,11 @@ class FieldAssignmentDetails extends StatelessWidget {
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(6),
-          borderSide: const BorderSide(color: Colors.black),
+          borderSide: const BorderSide(color: Colors.white),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(6),
-          borderSide: const BorderSide(color: Colors.black),
+          borderSide: const BorderSide(color: Colors.white),
         ),
       ),
     );

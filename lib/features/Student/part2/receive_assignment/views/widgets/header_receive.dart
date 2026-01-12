@@ -7,21 +7,19 @@ class HeaderReceive extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 170,
+      height: 45,
       width: double.infinity,
       alignment: Alignment.bottomCenter,
-      padding: EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
       decoration: BoxDecoration(
-        color: AppColors.blueDark,
+        color: AppColors.greyBackground,
         borderRadius: BorderRadius.vertical(bottom: Radius.circular(30)),
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          Image.asset('assets/images/icon.png', height: 110, width: 110),
-          SizedBox(height: 20),
           Text(
-            'Receiving the assignment',
+            'Submit assignment',
             style: TextStyle(
               fontSize: 23,
               fontWeight: FontWeight.bold,

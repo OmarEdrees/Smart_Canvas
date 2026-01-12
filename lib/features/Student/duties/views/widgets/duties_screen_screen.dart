@@ -8,9 +8,10 @@ class DutiesScreenWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.background,
       appBar: AppBar(
-        backgroundColor: AppColors.blueDark,
+        centerTitle: true,
+        backgroundColor: AppColors.greyBackground,
         title: Text(
           'Duties',
           style: TextStyle(

@@ -8,7 +8,7 @@ class NoteField extends StatelessWidget {
     return TextField(
       maxLines: 2,
       decoration: InputDecoration(
-        hintText: "Write a note to the student",
+        hintText: "Write a note to Dr",
         hintStyle: const TextStyle(
           color: Colors.grey,
           fontSize: 18,
@@ -18,7 +18,10 @@ class NoteField extends StatelessWidget {
           horizontal: 16,
           vertical: 14,
         ),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(5)),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(5),
+          borderSide: BorderSide(color: Colors.white),
+        ),
       ),
     );
   }

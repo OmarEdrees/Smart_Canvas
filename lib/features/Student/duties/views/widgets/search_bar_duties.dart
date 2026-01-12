@@ -12,7 +12,7 @@ class SearchBarDuties extends StatelessWidget {
             decoration: InputDecoration(
               hintText: "To search for duty",
               hintStyle: const TextStyle(
-                color: Color(0xFFCFC5C5),
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 17,
               ),
@@ -22,17 +22,17 @@ class SearchBarDuties extends StatelessWidget {
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(30),
-                borderSide: const BorderSide(color: Colors.black),
+                borderSide: const BorderSide(color: Colors.white),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(30),
-                borderSide: const BorderSide(color: Colors.black),
+                borderSide: const BorderSide(color: Colors.white),
               ),
             ),
           ),
         ),
         const SizedBox(width: 8),
-        const Icon(Icons.search, size: 26),
+        const Icon(Icons.search, size: 30, color: Colors.white),
       ],
     );
   }

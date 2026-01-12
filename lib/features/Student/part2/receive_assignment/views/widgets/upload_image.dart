@@ -7,26 +7,31 @@ class UploadImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DottedBorder(
-      color: Colors.black,
+      color: Colors.white,
       strokeWidth: 1.2,
       dashPattern: const [6, 4], // طول النقطة والمسافة
       borderType: BorderType.RRect,
-      radius: const Radius.circular(12),
+      radius: const Radius.circular(5),
       child: Container(
         height: 180,
 
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
+              Icon(Icons.cloud_upload, color: Colors.blue, size: 60),
               Text(
                 "Upload files",
-                style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  fontSize: 23,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
               ),
 
               Text(
                 "(Images - PDF - DOCX)",
-                style: TextStyle(color: Colors.black, fontSize: 16),
+                style: TextStyle(color: Colors.white, fontSize: 16),
               ),
             ],
           ),

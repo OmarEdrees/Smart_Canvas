@@ -34,7 +34,7 @@ class BodySideButton extends StatelessWidget {
             ontap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ProfileScreen()),
+                MaterialPageRoute(builder: (context) => DutiesScreen()),
               );
             },
           ),
@@ -63,7 +63,9 @@ class BodySideButton extends StatelessWidget {
             ontap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => TasksScreen()),
+                MaterialPageRoute(
+                  builder: (context) => ReceiveAssignmentScreen(),
+                ),
               );
             },
           ),

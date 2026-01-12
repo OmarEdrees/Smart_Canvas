@@ -8,9 +8,12 @@ class ReceiveAssignmentScreenWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.background,
+
       appBar: AppBar(
-        backgroundColor: AppColors.blueDark,
+        centerTitle: true,
+        title: Image.asset('assets/images/icon.png', height: 65, width: 65),
+        backgroundColor: AppColors.greyBackground,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

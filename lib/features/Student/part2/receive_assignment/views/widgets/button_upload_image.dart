@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_canvas/core/utilies/colors/app_colors.dart';
 
 class ButtonUploadImage extends StatelessWidget {
   const ButtonUploadImage({super.key});
@@ -10,7 +11,7 @@ class ButtonUploadImage extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 80, vertical: 15),
         //height: 60,
         decoration: BoxDecoration(
-          color: Color(0xff0E50B0),
+          color: AppColors.greyBackground,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Text(
